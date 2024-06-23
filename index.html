@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i> 
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">COURSE</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTENT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="hideMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1> The World's Coolest  Software Engineer</h1>
+            <p>Making a website is one of the easiest thing in the world.You just need to learn HTML,CSS,<br> Javascript and you are good to go.
+            </p>
+            <a href="" class="hero-btn">Check me out to know more</a>
+        </div>
+    </section>
+
+    <!---course---->
+
+    <section class="course">
+        <h1>Courses I Offer</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>1. Programming Languages</h3>
+                <ul>
+                    <li>Introduction to Python</li>
+                    <li>Advanced Python Programming</li>
+                    <li>Java for Beginners</li>
+                    <li>Advanced Java Programming</li>
+                    <li>JavaScript Fundamentals</li>
+                    <li>Modern JavaScript (ES6+)</li>
+                    <li>C++ Programming for Beginners</li>
+                    <li>C# Fundamentals</li>
+                </ul>
+            </div>
+            <div class="course-col">
+                <h3>2. Web Development</h3>
+                <ul>
+                    <li>HTML & CSS for Beginners</li>
+                    <li>Responsive Web Design with CSS3</li>
+                    <li>JavaScript for Web Development</li>
+                    <li>Front-End Frameworks: React.js</li>
+                    <li>Front-End Frameworks: Vue.js</li>
+                    <li>Back-End Development with Node.js</li>
+                    <li>Full-Stack Web Development with MERN (MongoDB, Express.js, React, Node.js)</li>
+                    <li>Building Web Applications with Django</li>
+                </ul>
+            </div>
+            <div class="course-col">
+                <h3>3. Cloud Computing & DevOps</h3>
+                <ul>
+                    <li>Introduction to Cloud Computing</li>
+                    <li>Amazon Web Services (AWS) for Beginners</li>
+                    <li>Microsoft Azure Fundamentals</li>
+                    <li>Google Cloud Platform (GCP) Essentials</li>
+                    <li>DevOps Principles and Practices</li>
+                    <li>Docker for Developers</li>
+                    <li>Kubernetes: Container Orchestration</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<!------- Javascript for Toggle Menu----  -->
+
+    <script>
+        var navLinks = document.getElementById("nav-links")
+        function showMenu(){
+            navLinks.style.right = "0"
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+</html>
